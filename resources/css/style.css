@@ -1,0 +1,483 @@
+/* Basic Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* Headings */
+
+h1 {
+    margin: 0;
+    padding-bottom: 100px;
+    font-size: 220%;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    cursor: default;
+}
+
+h2 {
+    font-size: 140%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    cursor: default;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+h2:after {
+    display: block;
+    height: 3px;
+    background-color: #2980b9;
+    content: " ";
+    width: 330px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+h3 {
+    font-size: 120%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    cursor: default;
+    margin-bottom: 20px;
+}
+
+h3:after {
+    display: block;
+    height: 2px;
+    background-color: #2980b9;
+    content: " ";
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 120%;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    cursor: default;
+}
+
+/* Reusable components */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/*----------------------------------*/
+/* BUTTONS */
+/*------------------------------------*/
+ion-icon {
+    margin: 0 5px -3px 5px;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;    
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #2980b9;
+    border: 1px solid #2980b9;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #2980b9;
+    color: #2980b9;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #174666;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #174666;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #174666;
+    color: #fff;
+}
+
+
+/* HEADER */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(img/herofinal.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.welcome {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+    color: #fff;
+}
+
+.welcome p {
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+/* SECOND PAGE */
+
+.second-page {
+    font-size: 100%;
+    background-color: #f4f4f4;
+}
+
+.second-page h2 {
+    font-weight: 100;
+    font-style: italic;
+    text-transform: none; 
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.box div {
+    padding: 15px;
+}
+
+.services ul,
+.contact ul {
+    list-style: none;
+}
+
+.services ul li {
+    padding: 5px 0;
+    font-size: 90%;
+}
+
+.services ul li:last-child {
+    margin-bottom: 7px;
+}
+
+
+.services ion-icon {
+    margin-right: 10px;
+    font-size: 90%;
+}
+
+.contact, .services {
+    height: 503px;
+}
+
+.contact ul li {
+    padding-bottom: 30px;
+}
+
+.contact ul li:first-child {
+    padding-top: 30px;
+}
+
+.contact ul li:last-child {
+    padding-bottom: 0;
+}
+
+/* BRANDS SHOWCASE */
+
+.section-brands {
+    padding: 0;
+    width: 98%;
+    margin-left: 1%;
+}
+
+.brands-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.brands-showcase li {
+    display: block;
+    float: left;
+    width: 14%;
+    margin: 10px 0;
+}
+
+.brand-logo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.brand-logo img {
+    opacity: 0.7;
+    width: 100%;
+    height: 100px;
+    /* transform: scale(1.15); */
+    transition: /*transform 0.5s,*/ opacity 0.5s;
+}
+
+.brand-logo img:hover {
+    opacity: 1;
+    /* transform: scale(1.03); */
+}
+
+.scale6 {
+    transform: scale(.6);
+}
+
+.scale8 {
+    transform: scale(.8);
+}
+
+/* FOOTER */
+
+footer {
+    font-size: 100%;
+    padding-top: 80px;
+    padding-bottom: 5px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(img/mail.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    border-top: 3px solid #888;
+}
+
+/*----------------------------------*/
+/* EMAIL FORM */
+/*------------------------------------*/
+
+.mail-form {
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.mail-form h3 {
+    font-style: italic;
+    padding-bottom: 30px;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+
+::-moz-placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+
+::-ms-input-placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+:-ms-input-placeholder{
+    color: #fff;
+}
+
+#name,
+#address,
+#telefon,
+textarea {
+    font-size: 95%;
+    width: 80%;
+    padding: 13px 18px;
+    line-height: 22px;
+    outline: 0;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #174666;
+    text-align: center;
+    resize: none;
+    color: #fff;
+    transition: border-bottom 0.2s;
+}
+
+#name:hover,
+#name:active,
+#address:hover,
+#address:active,
+#telefon:hover,
+#telefon:active,
+textarea:hover,
+textarea:active {
+    border-bottom: 3px solid #2980b9;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+form div:last-child,
+.host {
+    font-size: 60%;
+    font-weight: 100;
+    font-style: italic;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+form div:last-child p {
+    padding-bottom: 80px;
+    padding-top: 30px;
+}
+
+.send {
+    margin: 30px auto 40px;
+    background-color: #2980b9;
+    border: 1px solid #2980b9;
+    color: #fff;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    width: 250px;
+}
+
+.send:hover,
+.send:active{
+    color: #fff;
+    background-color: #174666;
+    border: 1px solid #174666;
+    cursor: pointer;
+}
+
+.send input {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+.footer-text {
+    padding: 20px 0;
+    border-top: 3px solid #888;
+    box-shadow: 0 -6px 6px #297fb9b6;
+}
+
+.podaci {
+    text-align: left;
+    cursor: default;
+}
+
+.podaci div,
+.goodluck div {
+    padding-bottom: 5px;
+}
+
+.podaci div:last-child,
+.goodluck div:last-child {
+    padding-bottom: 0;
+}
+
+.goodluck {
+    text-align: right;
+}
+.goodluck div:last-child,
+.host {
+    cursor: default;
+}
+
+.goodluck a {
+    margin-right: -5px;
+}
+
+.goodluck a:link,
+.goodluck a:visited {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s;
+}
+
+.host a:link,
+.host a:visited {
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.69);
+    transition: color 0.2s;
+}
+
+.goodluck a:hover,
+.goodluck a:active {
+    color: #888;
+}
+
+.goodluck a:hover ion-icon,
+.goodluck a:active ion-icon,
+.host a:hover,
+.host a:active {
+    color: rgba(255, 0, 0, 0.89);
+}
+
+
+

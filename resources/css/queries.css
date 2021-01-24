@@ -1,0 +1,96 @@
+/* Big tablet to 1200px (widths smaller than the row of 1140px) */
+@media only screen and (max-width: 1200px) {
+    h1 {padding-bottom: 80px;}
+    .row {padding: 0 2%;}
+    section {padding: 60px 0;}
+    .goodluck, .podaci {
+        font-size: 80%;}
+}
+
+/* Small tablet to big tablets: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    body {font-size: 18px;}
+    section {padding: 50px 0;}
+    footer { padding-top: 50px;}
+    form div:last-child p { padding-bottom: 50px;}
+    h1 {padding-bottom: 60px;}
+    .second-page, footer {
+        font-size: 80%;}
+    .welcome {width: 90%;}
+    .contact, .services { height: 432px;}
+    .goodluck, .host {
+        font-size: 70%;}
+        .services ul li {
+            margin-left: 0;
+        }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    body {font-size: 16px;}
+    section {padding: 30px 0;}
+    h1 {padding-bottom: 50px;}
+    form div:last-child p { padding-bottom: 30px;}
+    .second-page, footer { font-size: 90%;}
+    h3 { margin-bottom: 10px;}
+    h2:after { width: 200px;}
+    h3:after { width: 130px;}
+    footer { padding-top: 30px;}
+    form div:last-child p {
+            padding-bottom: 30px;
+            padding-top: 10px;
+        }
+    .welcome {width: 95%; font-size: 90%;}
+    .mail-form h3 {padding-bottom: 10px;}
+    .send { width: 150px;}
+    .goodluck a ion-icon { margin-bottom: -1px;}
+    h2:after,
+    h3:after,
+    h2:after { margin-top: 30px;}
+    h2 { margin-bottom: 30px;}
+    .brand-logo img {height: 40px;}
+    .box { width: 70%; margin-left: 15%;}
+    h3:after {  margin-top: 10px;}
+    .col { margin: 0;}
+    .contact, .services { height: 399px;}
+    .services ul li { margin-left: -23px;}
+    .contact ul li {padding-bottom: 20px; }
+    .contact ul li:last-child {padding-bottom: 20px;}
+    .contact ul li:first-child { padding-top: 20px;}
+    .contact div:last-child{ font-size: 80%;}
+    .contact a:link,
+    .contact a:visited { padding: 10px 10px;}
+    .contact ion-icon { margin-bottom: -2px;}
+    #name,
+    #address,
+    #telefon,
+    textarea { font-size: 80%;}
+    .send ion-icon { margin-bottom: -1px;}
+    p { word-spacing: 2px;}
+    .host a:link,
+    .host a:visited {
+    color: rgba(255, 0, 0, 0.9);}
+    .host {font-size: 40%;}
+}
+
+/* Small phones from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    body {font-size: 14px;}
+    section {padding: 20px 0;}
+    .welcome {width: 95%; font-size: 80%;}
+    .welcome p { text-align: justify;}
+    .row {padding: 0 1%;}
+    .contact { margin-top: 30px;}
+    footer { font-size: 100%;}
+    footer h3 { font-size: 90%;}
+    .brand-logo img { opacity: 1;}
+    ion-icon { margin-bottom: -1px;}
+    .js--scroll-to-mail ion-icon { margin-bottom: -3px;}
+    .contact { margin-top: 30px; height: auto;}
+    .footer-box .span-1-of-2 {
+		width: 50%; 
+    }
+    .goodluck  { text-align: right;}
+    .podaci { text-align: left; padding-right: 9px}
+    .footer-text { padding: 15px 0;}
+}
